@@ -1,4 +1,3 @@
-# Moviesversereferal
 # Telegram Referral Bot
 
 A Telegram bot that tracks user referrals with the following features:
