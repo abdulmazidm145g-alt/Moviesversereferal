@@ -38,7 +38,7 @@ async def referral_cmd(message: types.Message):
 
 @dp.message_handler(commands=['reflist'])
 async def reflist_cmd(message: types.Message):
-    if message.from_user.id != int(os.getenv("ADMIN_ID")):
+    if message.from_user.id != int(os.getenv("6643046428")):
         return await message.reply("❌ You are not admin.")
 
     text = "📊 Referral Stats:\n"
