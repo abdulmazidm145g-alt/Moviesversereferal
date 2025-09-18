@@ -1,11 +1,9 @@
 services:
-  - type: worker
-    name: referral-bot
+  - type: web
+    name: telegram-referral-bot
     env: python
-    buildCommand: "pip install -r requirements.txt"
-    startCommand: "python main.py"
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
     envVars:
-      - key: BOT_TOKEN
-        value: "8298808592:AAGAARB2_bWJoqYPJB4uzF0lkImt3-HtKVw"
-      - key: ADMIN_ID
-        value: "6643046428"
+      - key: PYTHON_VERSION
+        value: 3.9.18
